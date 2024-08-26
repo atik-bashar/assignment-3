@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="container mx-auto">
-        <nav class="py-10 px-20">
+        <nav class="lg:py-10 lg:px-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -42,7 +42,7 @@
                   <a class="text-3xl font-bold"><i class="fa-solid fa-arrow-up bg-lime-300 rotate-45 space-x-2 border rounded-full p-2 "></i>Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-base">
+                  <ul class="menu menu-horizontal lg:px-1 text-base">
                     <li class="font-bold"><a>Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Portfolio</a></li>
@@ -50,13 +50,14 @@
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end space-x-3">
-                    <i class="fa-solid fa-magnifying-glass rounded-full bg-gray-50 border-8"></i>
-                    <i class="fa-solid fa-cart-shopping rounded-full bg-gray-50 border-8"></i>
-                  <a class="btn bg-lime-400 border rounded-full text-xl">Book Consult <i class="fa-solid fa-arrow-up bg-slate-700 text-white rotate-45 space-x-2 border rounded-full p-2 "></i></a>
+                <div class="navbar-end lg:space-x-3">
+                    <i class="fa-solid fa-magnifying-glass rounded-full bg-gray-50 border-8 invisible lg:visible"></i>
+                    <i class="fa-solid fa-cart-shopping rounded-full bg-gray-50 border-8 invisible lg:visible"></i>
+                  <a class="btn bg-lime-400 border rounded-full text-xl invisible lg:visible"><span class="invisible lg:visible">Book Consult</span><i class="fa-solid fa-arrow-up bg-slate-700 text-white rotate-45 space-x-2 border rounded-full p-2 invisible lg:visible"></i></a>
                 </div>
               </div>
         </nav>
+
         <!-- Banner section design -->
          <div class="mb-12 px-20 flex flex-col items-center justify-center space-y-10">
             <!-- image part -->
@@ -81,7 +82,7 @@
                     class="max-w-full rounded-lg shadow-2xl" />
                   <div>
                     <div class="space-y-2">
-                     <img src="./assets/Vector.png" alt="">
+                     <img class="invisible lg:visible" src="./assets/Vector.png" alt="">
                     <button class="btn rounded-full text-base"><i class="fa-solid fa-arrow-right"></i>About Us</button>
                     <h1 class="text-5xl font-bold">We design thoughtful, <br> liveable spaces</h1>
                     <p class="py-3 text-base font-semibold">
@@ -111,7 +112,7 @@
          <!-- not main part -->
          <section class="container">
             <div class="bg-base-200 lg:py-16 lg:px-24">
-                <div class="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:items-center sm:text-center justify-between sm:p-10 lg:p-10 rounded-lg">
+                <div class="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  lg:justify-between p-2 lg:p-10 rounded-lg">
                     <div class="flex flex-col sm:items-center space-y-5">
                         <i class="fa-solid fa-message"></i>
                         <h2 class="text-4xl font-bold">235+</h2>
